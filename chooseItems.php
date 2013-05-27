@@ -189,6 +189,21 @@ function selectItem(id,id_ana,tipo)
 	req.onreadystatechange=process_selectItem;
 	req.open("GET",url,true);
 	req.send(null);
+	
+	if (global_tipo=='add')
+	{
+		var inner='<a href="javascript:selectItem('+chr(39)+item_id+chr(39)+','+chr(39)+ana_id+chr(39)+','+chr(39)+'del'+chr(39)+')"><img src="img/revision_si.gif" width="20" height="20" border="0" /></a>';
+				//window.alert(inner);
+		document.getElementById('select_'+item_id).innerHTML=inner;		
+	}
+	if (global_tipo=='del')
+	{
+		var inner='<a href="javascript:selectItem('+chr(39)+item_id+chr(39)+','+chr(39)+ana_id+chr(39)+','+chr(39)+'add'+chr(39)+')"><img src="img/revision_no.gif" width="20" height="20" border="0" /></a>';
+				//window.alert(inner);
+		document.getElementById('select_'+item_id).innerHTML=inner;		
+	}
+	
+	
 }
 
 function process_selectItem()
@@ -199,18 +214,7 @@ function process_selectItem()
 		{	
 			var response=req.responseText;
 			//window.alert(global_tipo+item_id);
-			if (global_tipo=='add')
-			{
-				var inner='<a href="javascript:selectItem('+chr(39)+item_id+chr(39)+','+chr(39)+ana_id+chr(39)+','+chr(39)+'del'+chr(39)+')"><img src="img/revision_si.gif" width="20" height="20" border="0" /></a>';
-				//window.alert(inner);
-				document.getElementById('select_'+item_id).innerHTML=inner;		
-			}
-			if (global_tipo=='del')
-			{
-				var inner='<a href="javascript:selectItem('+chr(39)+item_id+chr(39)+','+chr(39)+ana_id+chr(39)+','+chr(39)+'add'+chr(39)+')"><img src="img/revision_no.gif" width="20" height="20" border="0" /></a>';
-				//window.alert(inner);
-				document.getElementById('select_'+item_id).innerHTML=inner;		
-			}
+			
 		} 
 		else
 			window.alert("Ha ocurrido un problema");      
