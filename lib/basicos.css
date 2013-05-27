@@ -1,0 +1,57 @@
+/* CSS Document */
+
+
+
+
+.linkFuncionalidad {font-family:Tahoma, sans-serif; font-size:11px; color:#0000CC; text-decoration:none}
+a.linkFuncionalidad:hover { font-family:Tahoma, sans-serif; font-size:11px; color:#FF6600;}
+
+.linkFuncionalidad13 {font-family:Tahoma, sans-serif; font-size:13px; color:#0000CC; text-decoration:none}
+a.linkFuncionalidad13:hover { font-family:Tahoma, sans-serif; font-size:13px; color:#FF6600;}
+
+.linkFuncionalidad15 {font-family:Tahoma, sans-serif; font-size:15px; color:#0000CC; text-decoration:none}
+a.linkFuncionalidad15:hover { font-family:Tahoma, sans-serif; font-size:15px; color:#FF6600;}
+
+
+.linkFuncionalidad9 {font-family:Tahoma, sans-serif; font-size:9px; color:#0000CC; text-decoration:none}
+a.linkFuncionalidad9:hover { font-family:Tahoma, sans-serif; font-size:9px; color:#FF6600;}
+
+.Tahoma15Negro {font-family:Tahoma, sans-serif; font-size:15px; color:#000000; text-decoration:none}
+.Tahoma15Rojo {font-family:Tahoma, sans-serif; font-size:15px; color:#FF0000; text-decoration:none}
+
+
+.Tahoma13Negro {font-family:Tahoma, sans-serif; font-size:13px; color:#000000; text-decoration:none}
+.Tahoma13Gris {font-family:Tahoma, sans-serif; font-size:13px; color:#999999; text-decoration:none}
+.Tahoma13GrisOscuro {font-family:Tahoma, sans-serif; font-size:13px; color:#666666; text-decoration:none}
+.Tahoma13Rojo {font-family:Tahoma, sans-serif; font-size:13px; color:#FF0000; text-decoration:none}
+.Tahoma13Verde {font-family:Tahoma, sans-serif; font-size:13px; color:#093; text-decoration:none}
+.Tahoma13Azul {font-family:Tahoma, sans-serif; font-size:13px; color:#00F; text-decoration:none}
+.Tahoma13Blanco {font-family:Tahoma, sans-serif; font-size:13px; color:#FFFFFF; text-decoration:none}
+
+
+
+.Tahoma12Negro {font-family:Tahoma, sans-serif; font-size:12px; color:#000000; text-decoration:none}
+
+
+
+.Tahoma11Negro {font-family:Tahoma, sans-serif; font-size:11px; color:#000000; text-decoration:none}
+.Tahoma11Gris {font-family:Tahoma, sans-serif; font-size:11px; color:#666666; text-decoration:none}
+.Tahoma11Verde {font-family:Tahoma, sans-serif; font-size:11px; color:#00CC00; text-decoration:none}
+.Tahoma11Rojo {font-family:Tahoma, sans-serif; font-size:11px; color:#FF0000; text-decoration:none}
+.Tahoma11GrisOscuro {font-family:Tahoma, sans-serif; font-size:11px; color:#666666; text-decoration:none}
+
+.tablaEncabezado{
+	background-color:#E8E800;
+	height:25px;
+	font-family:Tahoma, 
+	sans-serif; 
+	font-size:13px; 
+	color:#000000;
+	font-weight:bold;
+}
+.tablaEncabezado td
+{
+	border:#000 solid 1px;
+	text-align:center;
+	border-collapse:collapse;
+}
