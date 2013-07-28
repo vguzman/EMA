@@ -29,8 +29,9 @@
 		exit;
 	}
 	
-		
-	$text=file_get_contents("http://www.ebay.com/itm/".$item_id);
+	echo $url="http://www.ebay.com/itm/".$item_id;
+	echo "<br>";
+	$text=file_get_contents($url);
 
 
 	
@@ -75,8 +76,10 @@
 	echo "<br>";
 	
 	
-	$text=file_get_contents("http://www.ebay.com/sch/".$seller."/m.html?_armrs=1");
-	$listed=textBetween($text,"autClass-resCount'>",'</span>');
+	echo $url="http://www.ebay.com/sch/".$seller."/m.html?_armrs=1";
+	echo "<br>";
+	$text=file_get_contents($url);
+	$listed=textBetween($text,'class="rcnt">','</span>');
 	$listed=str_replace(",","",$listed);
 	echo "Listed: ".$listed;
 	echo "<br>";
