@@ -109,8 +109,8 @@
 		echo "<br><br><br>";
 	}
 	
-	echo "<SCRIPT LANGUAGE='JavaScript'>		
+	/*echo "<SCRIPT LANGUAGE='JavaScript'>		
 			document.location.href='index.php';
-		</SCRIPT>";
+		</SCRIPT>";*/
 	
 ?>
