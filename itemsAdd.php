@@ -1,6 +1,11 @@
 <?php
 	
+	session_start();
+	
 	include "lib/util.php"; 
+	
+	verificarSesion();
+	
 	
 	if (isset($_POST['new_item']))
 		$item_id=$_POST['new_item'];
@@ -98,7 +103,12 @@
 		</SCRIPT>";
 		
 		
-	echo "<SCRIPT LANGUAGE='JavaScript'>		
+	if ($_GET['tipo']=="choose")
+		echo "<SCRIPT LANGUAGE='JavaScript'>		
+			window.close();
+		</SCRIPT>";
+	else	
+		echo "<SCRIPT LANGUAGE='JavaScript'>		
 			document.location.href='items.php?ana=".$ana_id."';
 		</SCRIPT>";
 	

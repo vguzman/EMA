@@ -1,7 +1,11 @@
 <?php 
 	
+	session_start();
+	
 	include "lib/util.php"; 
 	include "lib/clases.php";
+	
+	verificarSesion();
 	
 	$ana=new Analysis($_GET['ana']); 
 	
@@ -23,7 +27,7 @@
 		var dec=window.confirm("Are you sure sure very sure?");
 		
 		if (dec==true)
-			document.location.href="itemsDelete.php?ana="+ana+"&item="+id;
+			document.location.href="itemsDelete.php?ana="+ana+"&item="+id+"&tipo=add";
 	}
 
 </SCRIPT>
@@ -46,7 +50,7 @@
 <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="border-bottom:3px solid #999; margin-bottom:15px;">
   <tr>
     <td width="376" class="Tahoma15Negro"><strong><? echo $ana->name ?></strong></td> 
-    <td width="224"><form id="form1" name="form1" method="post" action="itemsAdd.php">
+    <td width="224"><form id="form1" name="form1" method="post" action="itemsAdd.php?tipo==add">
       <label for="new_item"></label>
       <input name="new_item" type="text" id="new_item" size="15" />
       <input type="submit" name="button" id="button" value="Add item" />

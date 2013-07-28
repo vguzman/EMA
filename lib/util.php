@@ -38,7 +38,19 @@ function textBetween($text,$begin,$end)
 
 
 
+function verificarSesion()
+{
+	if (!session_is_registered('granted'))
+	{
+		echo "<SCRIPT LANGUAGE='JavaScript'>		
+			window.alert('ERROR');
+			document.location.href='sesion.php';
+		</SCRIPT>";
+		exit;
+	}
+	
 
+}
 
 
 ?>

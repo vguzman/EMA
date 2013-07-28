@@ -1,9 +1,12 @@
-<?php
+<?php	
+	session_start();
 	set_time_limit(0);
 	
 	
 	include "lib/util.php"; 
 	include "lib/clases.php"; 
+	
+	verificarSesion();
 	
 	$ana_id=$_GET['ana'];
 	

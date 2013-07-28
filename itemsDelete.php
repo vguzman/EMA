@@ -1,7 +1,11 @@
 <?php
 	
+	session_start();
+	
 	include "lib/util.php"; 
 	include "lib/clases.php"; 
+
+	verificarSesion();
 	
 	if (isset($_GET['item']))
 		$id_item=$_GET['item'];
@@ -14,7 +18,13 @@
 	operacionSQL("DELETE FROM Sale WHERE id_item=".$id_item);
 	operacionSQL("DELETE FROM Item WHERE id=".$id_item);
 	
-	echo "<SCRIPT LANGUAGE='JavaScript'>		
+	if ($_GET['tipo']=="choose")
+		echo "<SCRIPT LANGUAGE='JavaScript'>		
+			window.close();
+		</SCRIPT>";
+	else	
+		echo "<SCRIPT LANGUAGE='JavaScript'>		
 			document.location.href='items.php?ana=".$_GET['ana']."';
 		</SCRIPT>";
+	
 ?>

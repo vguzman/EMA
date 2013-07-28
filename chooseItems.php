@@ -1,6 +1,10 @@
 <?
+	session_start();
+	
 	include "lib/util.php"; 
 	include "lib/clases.php"; 
+	
+	verificarSesion();
 	
 	$ana=new Analysis($_GET['ana']);
 	
@@ -180,15 +184,15 @@ function selectItem(id,id_ana,tipo)
 	document.getElementById('select_'+item_id).innerHTML='<img src="img/bigrotation2.gif" width="20" height="20" />';
 	
 	if (tipo=="add")
-		url="itemsAdd.php?new_item="+id+"&ana_id="+id_ana+"&hora="+now();
+		url="itemsAdd.php?new_item="+id+"&ana_id="+id_ana+"&hora="+now()+"&tipo=choose";
 	if (tipo=="del")
-		url="itemsDelete.php?ebay_item="+id+"&ana="+id_ana+"&hora="+now();
+		url="itemsDelete.php?ebay_item="+id+"&ana="+id_ana+"&hora="+now()+"&tipo=choose";
 	
 	
-	req=getXMLHttpRequest();
+	/*req=getXMLHttpRequest();
 	req.onreadystatechange=process_selectItem;
 	req.open("GET",url,true);
-	req.send(null);
+	req.send(null);*/
 	
 	if (global_tipo=='add')
 	{
@@ -202,6 +206,8 @@ function selectItem(id,id_ana,tipo)
 				//window.alert(inner);
 		document.getElementById('select_'+item_id).innerHTML=inner;		
 	}
+	
+	window.open(url,url,"toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=350");
 	
 	
 }

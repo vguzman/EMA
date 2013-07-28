@@ -1,7 +1,11 @@
 <?php
 	
+	session_start();
+		
 	include "lib/util.php"; 
 	include "lib/clases.php"; 
+	
+	verificarSesion();
 	
 	
 	
