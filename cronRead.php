@@ -21,7 +21,7 @@
 	echo $url="http://ema.vitoquen.com/sales.php?ana=".$analysis;
 	echo "<br>";
 	
-	if (($indice+1)==$total)
+	if (($indice+1)>=$total)
 		$nuevo=0;
 	else
 		$nuevo=$indice+1;
