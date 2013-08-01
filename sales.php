@@ -6,7 +6,7 @@
 	include "lib/util.php"; 
 	include "lib/clases.php"; 
 	
-	verificarSesion();
+	//verificarSesion();
 	
 	$ana_id=$_GET['ana'];
 	
