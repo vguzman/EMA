@@ -1,5 +1,5 @@
 <?php	
-	session_start();
+	//session_start();
 	set_time_limit(0);
 	
 	
@@ -109,8 +109,8 @@
 		echo "<br><br><br>";
 	}
 	
-	echo "<SCRIPT LANGUAGE='JavaScript'>		
+	/*echo "<SCRIPT LANGUAGE='JavaScript'>		
 			document.location.href='index.php';
-		</SCRIPT>";
+		</SCRIPT>";*/
 	
 ?>
