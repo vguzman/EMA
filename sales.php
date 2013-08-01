@@ -110,7 +110,7 @@
 	}
 	
 	echo "<SCRIPT LANGUAGE='JavaScript'>		
-			document.location.href='index.php';
+			document.location.href='reports.php?ana=".$ana_id."';
 		</SCRIPT>";
 	
 ?>
